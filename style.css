@@ -1,3 +1,5 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Noto+Kufi+Arabic:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
 html,
@@ -38,12 +40,7 @@ a {
 }
 .card:hover {
   /* cool effect by background-clip property */
-  background: linear-gradient(
-    320deg,
-    rgb(255, 26, 26),
-    rgb(105, 147, 220),
-    rgb(12, 93, 150)
-  );
+  background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
   background-clip: text;
   color: transparent;
   transform: scale(1.13);
@@ -117,4 +114,16 @@ a.website {
   color: white;
   font-size: 30px;
   font-family: "Funnel Display", serif;
+}
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.card:hover {
+    background: linear-gradient(320deg, #ff00ff, #00ffcc, #ff00ff);
+    background-size: 200% 200%;
+    background-clip: text;
+    animation: moveGradient 5s infinite forwards;
 }
