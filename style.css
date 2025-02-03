@@ -117,12 +117,12 @@ a.website {
 }
 @keyframes moveGradient {
     0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+    50% { background-position: 250% 50%; }
     100% { background-position: 0% 50%; }
 }
 
 .card:hover {
-    background: linear-gradient(320deg, #ff00ff, #00ffcc, #ff0080);
+    background: linear-gradient(300deg, #ff00ff, #00bb96, #ff0080);
     background-size: 200% 200%;
     background-clip: text;
     animation: moveGradient 5s infinite forwards;
