@@ -6,7 +6,9 @@
   padding: 0;
   user-select: none !important;
 }
-
+body , html {
+    background: #1a1a1a;
+}
 a {
   text-decoration: none;
   color: white;
@@ -70,6 +72,7 @@ h1 {
   height: 200%;
   margin: auto;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 ul {
   list-style-type: circle;
