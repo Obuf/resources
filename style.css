@@ -1,32 +1,33 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Noto+Kufi+Arabic:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-html,
-body {
+* {
   margin: 0;
-  background-color: #1a1a1a;
-  width: 100%;
-  height: 100%;
+  padding: 0;
+  user-select: none !important;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+body {
+  display: flex;
+  flex-flow: column;
+}
 .main {
-  width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 .flex-container {
-  color: white;
+  width: 80%;
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
+  flex-flow: wrap row;
+  gap: 50px;
   justify-content: center;
-  gap: 40px;
+  padding: 5px;
 }
 .card {
   align-items: end;
@@ -37,23 +38,21 @@ a {
   background: #202127;
   cursor: pointer;
   border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0);
 }
 .card:hover {
   /* cool effect by background-clip property */
-  background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
-  background-clip: text;
   color: transparent;
-  transform: scale(1.12);
+  transform: scale(1.1);
   transition: 0.25s;
   border: 2px solid rgb(106, 102, 159);
-  box-shadow: 10px -10px 20px rgb(31, 26, 108);
-  filter: blur(10);
 }
 .card:not(:hover) {
-  transition: 0.34s;
+  transition: 0.2s;
 }
 .card > p.head-sentence {
   font-size: 50px;
+  padding: 30px 0px;
 }
 h1 {
   text-align: center;
@@ -113,16 +112,61 @@ a.website {
   color: white;
   font-size: 30px;
   font-family: "Funnel Display", serif;
+  margin-bottom: 15px;
 }
 @keyframes moveGradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 250% 50%; }
-    100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 150%;
+  }
+  100% {
+    background-position: 0% 200%;
+  }
+  200% {
+    background-position: 0% 400%;
+  }
 }
 
 .card:hover {
-    background: linear-gradient(300deg, #ff00ff, #00bb96, #ff0080);
-    background-size: 200% 200%;
-    background-clip: text;
-    animation: moveGradient 5s infinite forwards;
+  background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 200% 400%;
+  background-clip: text;
+  animation: moveGradient 2s infinite forwards;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+p.logo {
+  margin: 10px 0px 0px;
+  color: white;
+  font-family: "Amiri", serif;
+  font-size: 30px;
+  font-weight: 900;
+  pointer-events: none;
+}
+
+i {
+  font-size: 36px;
+  color: rgb(187, 187, 187);
+}
+i:hover {
+  color: white;
 }
