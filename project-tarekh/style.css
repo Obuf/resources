@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  font-family: "Amiri", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html,
+body {
+    background: #242424;
+  height: 100%;
+}
+
+.flex-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  margin-top: -40px;
+  border-radius: 20px;
+  display: grid;
+  background: #000;
+  width: 90%;
+  height: 90%;
+  grid-template-columns: 60px repeat(60, auto);
+  grid-template-rows: 35px repeat(5, auto);
+}
+
+.time-container {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(59, 25px);
+  background-color: rgb(0, 0, 0);
+  color: white;
+  grid-column: 2 / span 60;
+  border-radius: 0px 20px 0px 0px;
+}
+.time {
+  text-align: center;
+  writing-mode: sideways-lr;
+}
+.country {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  font-size: 26px;
+  text-align: center;
+  writing-mode: sideways-lr;
+}
+.gold {
+  color: goldenrod;
+}
+.cntr-container {
+  display: grid;
+  grid-template-rows: repeat(6, 140px);
+  background-color: #e5e5e5;
+  grid-row: 2 / span 6;
+  border-radius: 0px 0px 0px 20px;
+}
+.turkey {
+    border-radius: 0px 0px 0px 20px;
+}
+
+.ruler-container {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: repeat(59, 25px);
+  grid-template-rows: repeat(6, 140px);
+  background: rgb(60, 112, 60);
+  grid-area: 2 / 2 / span 6 / span 60;
+  border-radius: 0px 0px 20px 0px;
+}
+.m-cntry {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+.m-cntry:active {
+  box-shadow: 20px -20px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transform: scale(1.09);
+  transition: all 0.2s;
+}
+.m-cntry:not(:active) {
+  transition: 0.3s;
+}
+
+.westren-gothic {
+  background: #f4db70;
+  grid-column: 1 / span 11;
+}
+
+.wulat {
+  writing-mode: sideways-lr;
+  background: #abc16f;
+  grid-column: 12 / 16;
+}
+.wulat:active {
+  writing-mode: horizontal-tb;
+}
+.umawi {
+  background: #7f6990;
+  grid-column: 16 / 43;
+}
+.tawaif {
+  background: #d6dcaa;
+  grid-column: 43 / 50;
+}
+.murabitoon {
+  background: #f0a365;
+  grid-column: 50 / 56;
+}
+.muwahidoon {
+  writing-mode: sideways-lr;
+  font-size: 36px;
+  background: #8196b4;
+  grid-column: 56 / 60;
+}
+.rome {
+  background: #f6b2c1;
+  grid-area: 2 / 1 / 2 / 11;
+}
+.umawi-g {
+  background: #678852;
+  grid-area: 2 / 11 / 2 / 16;
+}
+.abasid {
+  font-size: 26px;
+  writing-mode: sideways-lr;
+  background: #f07041;
+  grid-area: 2 / 16 / 2 / 19;
+}
+.agaliba {
+  background: #b0cea7;
+  grid-area: 2 / 19 / 2 / 31;
+}
+.fatimia {
+  background: #afa0b7;
+  grid-area: 2 / 31 / 2 / 47;
+}
+
+.bano-hilal {
+  background: #d2c2a0;
+  grid-area: 2 / 47 / 2 / 60;
+}
+.tribes {
+    font-size: 25px;
+  writing-mode: sideways-lr;
+  background: #a36888;
+  grid-area: 3 / 1 / 3 / 3;
+}
+.prophetic {
+    font-size: 25px;
+  writing-mode: sideways-lr;
+  background: #7aad58;
+  grid-area: 3 / 3 / 3 / 5;
+}
+.rashidoon {
+    font-size: 29px;
+  writing-mode: sideways-lr;
+  background: #2a9334;
+  grid-area: 3 / 5 / 3 / 7;
+}
+.umawi-g1 {
+    font-size: 29px;
+  background: #678852;
+  grid-area: 3 / 7 / 3 / 16;
+}
+.abasid-g {
+    font-size: 29px;
+  background: #f07041;
+  grid-area: 3 / 16 / 3 / 31;
+}
+.qaramita {
+    font-size: 48px;
+  background: #d5e4e7;
+  grid-area: 3 / 31 / 3 / 60;
+}
+.sasan {
+    writing-mode: sideways-lr;
+    font-size: 29px;
+  background: #f49f4e;
+  grid-area: 4 / 1 / 4 / 4;
+}
+.sasan {
+    writing-mode: sideways-lr;
+    font-size: 29px;
+  background: #f49f4e;
+  grid-area: 4 / 1 / 4 / 4;
+}
+.rashidoon-g {
+    writing-mode: sideways-lr;
+    font-size: 29px;
+  background: #2a9334;
+  grid-area: 4 / 4 / 4 / 7;
+}
+.umawi-g2 {
+    font-size: 29px;
+  background: #678852;
+  grid-area: 4 / 7 / 4 / 16;
+}
+.abasid-g1 {
+    font-size: 29px;
+  background: #f07041;
+  grid-area: 4 / 16 / 4 / 36;
+}
+.bowaihi {
+    font-size: 49px;
+  background: #cc9b33;
+  grid-area: 4 / 36 / 4 / 46;
+}
+.suljuks {
+    font-size: 49px;
+  background: #fdd3ab;
+  grid-area: 4 / 46 / 4 / 55;
+}
+.shahanion {
+    font-size: 39px;
+  background: #b9deb3;
+  grid-area: 4 / 55 / 4 / 60;
+}
+.indian-tribes {
+    font-size: 39px;
+  background: #b3ce76;
+  grid-area: 5 / 1 / 5 / 60;
+}
+.byzantine {
+    font-size: 59px;
+  background: #f6b9c8;
+  grid-area: 6 / 1 / 6 / 48;
+}
+.suljuks-g {
+    writing-mode: sideways-lr;
+    font-size: 18px;
+  background: #e67243;
+  grid-area: 6 / 48 / 6 / 49;
+}
+.suljuks-g1 {
+    border-radius: 0px 0px 20px 0px;
+    font-size: 38px;
+  background: #7ec8e1;
+  grid-area: 6 / 49 / 6 / 60;
+}
